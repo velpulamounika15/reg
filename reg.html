@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .reg{
+            background-color: crimson;
+            height: 400px;
+            width: 400px;
+            margin: 60px auto;
+            border-radius: 10px;
+            
+        }
+        h1{
+          text-align: center;
+          padding-top: 50px;  
+        }
+        h3{
+            text-align: center;
+            padding-top:15px;
+        }
+        button{
+            border-radius: 10px;
+            margin-left: 150px;
+            padding-left: 25px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-right: 25px;
+            text-align: center;
+        }
+        input{
+            height: 20px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="reg">
+        <h1>REGISTRATION FORM</h1>
+        <h3>user name:<input type="text" placeholder="user name" id="user"></h3>
+        <h3>Email:<input type="email" placeholder="email" id="mail"></h3>
+        <h3>password: <input type="password" placeholder="password" id="psw"></h3>
+        <h3>conform password: <input type="password" id="cpsw"></h3>
+        <button onclick="fun1()"><a href="">submit</a></button>
+        
+    </div>
+
+    <script>
+    function fun1(){
+        const username=document.getElementById('user')
+        const mail=document.getElementById('mail')
+        const password=document.getElementById('psw')
+        const cpassword=document.getElementById('cpsw')
+        console.log("mail:", mail.value);
+        console.log("username:",username.value)
+        console.log("password",password.value)
+        console.log("confirm psw",cpassword.value)
+        alert('submit........')
+    
+    }
+    </script>
+</body>
+</html>
